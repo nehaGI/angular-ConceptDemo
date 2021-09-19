@@ -1,0 +1,17 @@
+p {
+  font-family: Lato;
+}
+.toggle{
+  background-color: aquamarine;
+}
+.tool{
+  display: inline-block;
+  background-color: azure;
+  border: 1px dotted rgb(196, 18, 18); 
+  position: absolute;
+}
+
+.style1{
+  background-color: aquamarine;
+
+}
