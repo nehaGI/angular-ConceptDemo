@@ -1,0 +1,31 @@
+<hello name="{{ name }}"></hello>
+<div ttToolTip toolTipText="Tip of the day">
+  Start editing to see some magic happen :)
+</div>
+<div>Want to see Tool tip attribute custom directive
+  <input type="radio"  id="btn" name="button1" (click)="onClick()"/>
+  <input type="radio"  id="btn"  name="button1"  (click)="onClick()"/>
+</div>
+<ng-container *ttif='show' ttBgColor>
+
+
+<div ttToolTip toolTipText="Tip of the day">
+  Start editing to see some magic happen
+</div>
+</ng-container>
+
+
+
+<ul>
+  <li *ngFor="let movie of movies; let i=index;trackBy: trackByFn;">
+    {{i}}. {{ movie.title }} - {{movie.director}} <button (click)="remove(i)">remove</button>
+  </li>
+</ul>
+ 
+<button (click)="Refresh()" class="styl">Refresh</button> <br>
+ 
+Title     : <input type="text" [(ngModel)]="mTitle"> 
+Director  : <input type="text" [(ngModel)]="mDirector"> 
+<button  (click)="addMovie()">Add</button>
+
+<input type="button"  value="Home" (click)="goHome()"/>
